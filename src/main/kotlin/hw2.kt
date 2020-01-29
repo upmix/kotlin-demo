@@ -15,6 +15,7 @@ fun main() {
         else -> "Что-то пошло не так"
     }
 
+
     println(verdict)
 }
 

@@ -14,6 +14,7 @@ fun calculateFee(amount : Int, total : Int, exclusive : Boolean = false) : Int {
         total <= 50000 -> 20
         else -> 15
     }
+
     if (exclusive) fee -=5 //итоговая величина комиссии в процентах
     return (amount*fee/100)
 }
