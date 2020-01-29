@@ -8,10 +8,10 @@ fun main() {
 
 
 fun calculateFee(amount : Int, total : Int, exclusive : Boolean = false) : Int {
-    var fee = when (total) { //величина комиссии в процентах
-        in 0..1000 -> 30
-        in 1001..10000 -> 25
-        in 10001..50000 -> 20
+    var fee = when { //величина комиссии в процентах
+        total <= 1000 -> 30
+        total <= 10000 -> 25
+        total <= 50000 -> 20
         else -> 15
     }
     if (exclusive) fee -=5 //итоговая величина комиссии в процентах
