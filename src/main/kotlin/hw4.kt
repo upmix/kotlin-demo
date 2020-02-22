@@ -10,7 +10,7 @@ fun main() {
     text.click() // вызывается метод из `View`
     println(text.text)
     text.text = "Something bad happened"
-    println(text.text) // Something bad happened
+    println(text.text) // Something bad happened*/
 
 
     val button = Button("Click me")

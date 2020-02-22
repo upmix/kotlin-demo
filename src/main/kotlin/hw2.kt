@@ -1,5 +1,5 @@
 fun main() {
-    val height = 1.0 // рост в метрах
+    val height = 1.7 // рост в метрах
     val weight = 88.3 // вес в килограммах
     val index = bodyMassIndex(height, weight) //индекс массы тела
 
